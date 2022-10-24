@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--   Registration Form -->
+  <div id="reg">
+        <form onsubmit="register(event)" method="POST">
+            <h1>REGISTRATION FORM</h1>
+            <div class="name">
+               <input type="text" placeholder="First Name">
+               <input type="text" placeholder="Last Name">
+            </div>
+            <div class="phone">
+                <input type="number" placeholder="Phone Number">
+            </div>
+            <div class="Email">
+                <input type="email" placeholder="Your Email">
+            </div>
+<!--           <label for="gender"> Gender </label> -->
+          <select id="gender">
+            <option style="visibility:hidden;">Select your gender</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+<!--           <label for="dob">Date of birth</label> -->
+            <input type="date" id="dob" required>
+<!--           <label for="color"> Favorite color</label> -->
+             <input type="color" id="color" placeholder="Your Favorite Colour">
+            <div class="Password">
+                <input type="password" placeholder="Your Password">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+           <div class="button">
+             <a href="#login" type="submit" value="submit" class="btn">Submit</a>
+            </div>
+        </form>
+    </div>
+<!--   LOGIN FORM -->
+  <div id="login">
+        <form onsubmit="register(event)" method="post">
+            <h1>LOGIN FORM</h1>
+            <div class="Email">
+                <input type="email" placeholder="Your Email">
+            </div>
+            <div class="phone">
+                <input type="number" placeholder="Phone Number">
+            </div>
+            <div class="Password">
+                <input type="password" placeholder="Your Password">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+            <div class="button">
+              <a href="#success" type="submit" value="login" class="btn">Login</a>
+              </div>
+        </form>
+    </div>
+<!--  Success Register Page-->
+   <div class="success" id="success">
+               <div class="success-content">
+                 <div class="content">
+                    <img src="https://cdn.iconscout.com/icon/free/png-128/check-verified-successful-accept-tick-yes-success-2516.png" alt="">
+                  </div>
+               <h1>SUCCESSFUL</h1>
+               <div class="button">
+                    <a href="" type="submit" value="login" class="btn">Continue</a>
+               </div>
+               </div>
+   </div>
+  <script src="script.js"></script>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
